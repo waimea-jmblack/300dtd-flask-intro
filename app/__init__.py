@@ -10,8 +10,7 @@ def home():
 
 @app.get("/test/")
 def test():
-    return "<h1>Testing... Yo Mamma</h1>"
-
+    return render_template("pages/test.jinja")
 @app.get("/umIDK/")
 def umIDK():
     return "<h1>Testing... My brain cells</h1>"
