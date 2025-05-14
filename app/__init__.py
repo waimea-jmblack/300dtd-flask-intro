@@ -13,7 +13,7 @@ def home():
 def test():
     return render_template("pages/test.jinja")
 
-@app.get("/cool button/")
+@app.get("/coolButton/")
 def coolButton():
     return render_template("pages/nuts.jinja")
 
