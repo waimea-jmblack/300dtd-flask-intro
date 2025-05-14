@@ -1,4 +1,5 @@
 from flask import Flask
+from random import randint
 from flask import render_template
 
 app = Flask(__name__)
@@ -11,6 +12,17 @@ def home():
 @app.get("/test/")
 def test():
     return render_template("pages/test.jinja")
-@app.get("/umIDK/")
-def umIDK():
-    return "<h1>Testing... My brain cells</h1>"
+
+@app.get("/cool button/")
+def coolButton():
+    return render_template("pages/nuts.jinja")
+
+
+@app.get("/random/")
+def random():
+    randNum = randint(1, 1000)
+    return render_template("pages/random.jinja", number = randNum)
+
+@app.errorhandler(404)
+def notFound(error):
+    return render_template("pages/404.jinja")

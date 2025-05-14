@@ -19,7 +19,15 @@ section#hero h1 {
     text-align: center;
 }
 
-section#likes div{
-    display: flex;
-    gap: 1rem;
+#rand-num {
+    font-size: 10rem;
+    color: var(--pico-primary);
+    font-weight:bold;
+    text-align: center;
 }
+
+
+
+/* Timeline ~ Note, need to go speak to Jason on what happend during that lesson. */
+/* What we know ~ Teacher marked me present at the start of period and absent near middle-end. / No relievier during 1hr time / Truth is a no can do but Lying is 50/50 on 
+weather it will work / Jason is a 75% chance he would back me up but the rest of the class = near 0 / If there was not reliver and instead was main teaher*/
